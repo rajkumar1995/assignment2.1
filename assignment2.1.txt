@@ -1,0 +1,198 @@
+1.sum of two integers -hardcode program
+import java.util.*;
+public class sum
+{
+public static void main(String args[])
+{
+	int x=4;
+	int y=5;
+	int total=x+y;
+	System.out.println(total);
+}
+}
+
+output:
+9
+
+
+
+
+
+2.sum of two integers-get input from user
+import java.util.*;
+public class sum
+{
+public static void main(String args[])
+{
+	Scanner sc=new Scanner(System.in);
+	int x=sc.nextInt();
+	int y=sc.nextInt();
+	int total=x+y;
+	System.out.println("sum is:"+total);
+}
+}
+output:
+4
+5
+sum is:9
+
+
+
+3.sum of two integers=using sum method
+import java.util.*;
+public class acad
+{
+public static void main(String args[])
+{
+	Scanner sc=new Scanner(System.in);
+        
+	int x=sc.nextInt();
+        System.out.println("First number is:"+x );
+	int y=sc.nextInt();
+        System.out.println("Second number is:"+y);
+	sum(x,y);	
+}
+static void sum(int x,int y)
+{
+	
+	int sum=x+y;
+	System.out.println("sum is"+sum);
+}
+}
+output:
+4
+5
+sum is 9
+
+
+
+4) 
+
+import java.util.*;
+public class acad
+{
+public static void main(String args[])
+{
+Scanner s= new Scanner(System.in);
+int a=s.nextInt();int n=s.nextInt();
+for(int i=a;i<=n;i++)
+{
+if(i%2==0)
+{
+System.out.println("odd number:"+i );
+}else{
+System.out.println("even number:"+i );
+}
+}
+}
+}
+
+
+
+5)
+
+import java.util.*;
+public class Main
+{
+public static void main(String args[])
+{
+Scanner s= new Scanner(System.in);int b=1;
+int a=s.nextInt();
+for(int i=1;i<=10;i++)
+{b=i*a;
+    System.out.println(a+"*"+i+"="+b );
+}
+}
+}
+
+
+6)
+
+
+import java.util.*;
+public class Main
+{
+public static void main(String args[])
+{
+
+int d=sum(3,4);
+int e=sum(5,6,7);
+System.out.println(c);
+System.out.println(d);
+}
+public static int sum(int a,int b)
+{
+   
+int sum=a+b;
+return sum;
+}
+public static int sum(int a,int b,int c)
+{
+   
+int sum=a+b+c;
+return sum;
+}
+}
+yes it is possible using method overloading
+eg:
+import java.util.*;
+public class Main
+{
+public static void main(String args[])
+{
+
+int d=sum(1,2);
+int e=sum(5,3,9);
+System.out.println(c);
+System.out.println(d);
+}
+public static int sum(int a,int b)
+{
+   
+int sum=a+b;
+return sum;
+}
+public static int sum(int a,int b,int c)
+{
+   
+int sum=a+b+c;
+return sum;
+}
+}
+
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String args[]) 
+    {
+        int n, temp;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter no. of elements");
+        n = s.nextInt();
+        int a[] = new int[n];
+        System.out.println("Enter  the elements:");
+        for (int i = 0; i < n; i++) 
+        {
+            a[i] = s.nextInt();
+        }
+        for (int i = 0; i < n; i++) 
+        {
+            for (int j = i + 1; j < n; j++) 
+            {
+                if (a[i] < a[j]) 
+                {
+                    temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+                }
+            }
+        }
+        
+        for (int i = 0; i <= n - 1; i++) 
+        {
+            System.out.print(a[i] + " ");
+        }
+        
+    }
+}
